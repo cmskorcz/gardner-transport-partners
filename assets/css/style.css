@@ -4,39 +4,40 @@
     box-sizing: border-box;
 }
 
-/* General */
+/* Utilities */
 
-header, footer {
+.primary-background {
     background-color: #ad0a00;
     color: #ffffff;
-    overflow: auto;
-    position: relative;
 }
 
 /* Header */
 
+header {
+    padding: 20px 35px;
+}
+
 header h1 {
-    padding: 20px 0 10px 0;
-    display: inline-block;
+    display: inline;
+    font-weight: bold;
     font-size: 36px;
-    margin-left: 35px;
+    margin: 0;
 }
 
 header nav {
-    position: absolute;
-    bottom: 15px;
-    right: 40px;
+    float: right;
+    margin: 10px 0;
 }
 
 header nav ul li {
-    list-style: none;
     display: inline;
-    font-size: 20px;
-    margin: 0 25px;
 }
 
 header nav ul li a {
     text-decoration: none;
+    font-weight: lighter;
+    font-size: 22px;
+    margin: 0 30px;
     color: #ffffff;
 }
 
@@ -44,3 +45,9 @@ header nav ul li a:hover {
     text-decoration: underline;
 }
 
+/* Footer */
+
+footer {
+    width: 100%;
+    padding: 40px 35px;
+}
