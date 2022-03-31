@@ -4,13 +4,16 @@
     box-sizing: border-box;
 }
 
-/* Header */
+/* General */
 
-header {
+header, footer {
     background-color: #ad0a00;
     color: #ffffff;
     overflow: auto;
+    position: relative;
 }
+
+/* Header */
 
 header h1 {
     padding: 20px 0 10px 0;
@@ -20,16 +23,16 @@ header h1 {
 }
 
 header nav {
-    float: right;
-    padding: 36px 0 10px 0;
-    margin-right: 25px;
+    position: absolute;
+    bottom: 15px;
+    right: 40px;
 }
 
 header nav ul li {
     list-style: none;
     display: inline;
     font-size: 20px;
-    padding: 0 10px;
+    margin: 0 25px;
 }
 
 header nav ul li a {
@@ -37,4 +40,7 @@ header nav ul li a {
     color: #ffffff;
 }
 
-/* Footer */
+header nav ul li a:hover {
+    text-decoration: underline;
+}
+
