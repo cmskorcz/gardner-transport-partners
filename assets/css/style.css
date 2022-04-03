@@ -1,3 +1,9 @@
+:root {
+    --primary-color: #ad0a00;
+    --secondary-color: #5e5a5a;
+    --tertiary-color: #fff;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -7,38 +13,53 @@
 /* Utilities */
 
 .primary-background {
-    background-color: #ad0a00;
-    color: #ffffff;
+    background-color: var(--primary-color);
+    color: var(--tertiary-color);
 }
 
 /* Header */
 
 header {
-    padding: 20px 35px;
+    display: flex;
+    padding: 20px 0;
+    flex-wrap: wrap;
 }
 
 header h1 {
-    display: inline;
     font-weight: bold;
     font-size: 36px;
-    margin: 0;
+    width: 100%;
+    margin-bottom: 20px;
+    text-align: center;
 }
 
 header nav {
-    float: right;
-    margin: 10px 0;
+    width: 100%;
+    text-align: center;
+    padding: 0 10px;
+}
+
+header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
 }
 
 header nav ul li {
-    display: inline;
+    display: inline-block;
+    padding-bottom: 10px;
+}
+
+header nav ul li:last-child {
+    padding-bottom: 0;
 }
 
 header nav ul li a {
     text-decoration: none;
     font-weight: lighter;
     font-size: 22px;
-    margin: 0 30px;
-    color: #ffffff;
+    margin: 0 10px;
+    color: var(--tertiary-color);
 }
 
 header nav ul li a:hover {
@@ -86,13 +107,13 @@ footer address {
     line-height: 1.5;
     font-style: normal;
     padding: 15px;
-    border: 3px solid #ffffff;
-    background-color: #5e5a5a;
+    border: 3px solid var(--tertiary-color);
+    background-color: var(--secondary-color);
     font-size: 17px;
 }
 
 footer a {
-    color: #ffffff;
+    color: var(--tertiary-color);
     text-decoration: none;
 }
 
