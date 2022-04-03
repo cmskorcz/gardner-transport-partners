@@ -27,8 +27,9 @@ header {
 
 header h1 {
     font-weight: bold;
-    font-size: 36px;
+    font-size: 32px;
     width: 100%;
+    padding: 0 5%;
     margin-bottom: 20px;
     text-align: center;
 }
@@ -47,7 +48,7 @@ header nav ul {
 
 header nav ul li {
     display: inline-block;
-    padding-bottom: 10px;
+    padding-bottom: 15px;
 }
 
 header nav ul li:last-child {
@@ -57,7 +58,7 @@ header nav ul li:last-child {
 header nav ul li a {
     text-decoration: none;
     font-weight: lighter;
-    font-size: 22px;
+    font-size: 20px;
     margin: 0 10px;
     color: var(--tertiary-color);
 }
@@ -120,3 +121,66 @@ footer a {
 footer a:hover {
     text-decoration: underline;
 }
+
+/* Media Queries */
+
+@media screen and (min-width: 425px) {
+    header h1 {
+        padding: 0 17%;
+    }
+}
+
+@media screen and (min-width: 484px) {
+    header nav ul li {
+        padding-bottom: 0;
+    }
+}
+
+@media screen and (min-width: 575px) {
+    header h1 {
+        font-size: 42px;
+    }
+    header nav ul li a {
+        font-size: 24px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    header h1 {
+        padding: 0 25%;
+    }
+}
+
+@media screen and (min-width: 980px) {
+
+    header {
+        justify-content: space-between;
+        align-items: flex-end;
+    }
+
+    header h1 {
+        width: 35%;
+        font-size: 36px;
+        padding: 0;
+        margin-bottom: 0;
+    }
+
+    .partners {
+        display: block;
+    }
+
+    header nav {
+        width: 50%;
+        margin-right: 5%;
+    }
+
+    header nav ul {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    header nav ul li a {
+        font-size: 20px;
+    }
+}
+
